@@ -28,6 +28,11 @@
   cd client && go run client.go
   ```
 
+- Run script request to publish message
+  ```
+  ./request.sh
+  ```
+
 - Run with docker
   ```
   docker build -t warpin .

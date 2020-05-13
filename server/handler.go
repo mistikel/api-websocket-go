@@ -135,7 +135,7 @@ func (c *Controller) SubscribeMessage(w http.ResponseWriter, r *http.Request) {
 		select {
 		case msg := <-sChan:
 			utils.InfoContext(r.Context(), "Message: %v", msg)
-			err := conn.WriteMessage(websocket.TextMessage, []byte(msg+id.String()))
+			err := conn.WriteMessage(websocket.TextMessage, []byte(msg))
 			if err != nil {
 				utils.ErrContext(r.Context(), "[Subcriber]: %v", err)
 				return
