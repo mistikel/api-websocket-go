@@ -15,7 +15,7 @@
 
 - Test
   ```
-  go run test -race ./...
+  go test -race ./...
   ```
 
 - Run server
