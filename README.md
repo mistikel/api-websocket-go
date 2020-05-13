@@ -30,6 +30,6 @@
 
 - Run with docker
   ```
-  docker build -t warpin .
-  docker run -p 8080:8080 warpin
+  docker build -t asg .
+  docker run -p 8080:8080 asg
   ```
